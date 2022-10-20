@@ -1,6 +1,8 @@
 import React from "react";
-import CardVideo from "./Componentes/CardVideo";
+import CardVideo from "./Componentes/CardVideo/CardVideo";
 import "./styles.css";
+import { GlobalStyle } from "./GlobalStyle";
+import { Cabecalho, TelaInteira, Principal, Lateral, secao, Lista, Fim } from "./styled"
 
 export default function App() {
   const card1 = {
@@ -11,23 +13,24 @@ export default function App() {
 
   return (
     <div>
-      <div className="tela-inteira">
-        <header>
+      
+      <TelaInteira>
+        <Cabecalho>
           <h1>LabeTube</h1>
           <input type="text" placeholder="Busca" id="campoDeBusca" />
-        </header>
+        </Cabecalho>
 
-        <main>
-          <nav className="menu-vertical">
-            <ul>
-              <li className="botoes-meunu-vertical">Início</li>
-              <li className="botoes-meunu-vertical">Em alta</li>
-              <li className="botoes-meunu-vertical">Inscrições</li>
+        <Principal>
+          <Lateral>
+            <Lista>
+              <li>Início</li>
+              <li>Em alta</li>
+              <li>Inscrições</li>
               <hr />
-              <li className="botoes-meunu-vertical">Originais</li>
-              <li className="botoes-meunu-vertical">Histórico</li>
-            </ul>
-          </nav>
+              <li>Originais</li>
+              <li>Histórico</li>
+            </Lista>
+          </Lateral>
 
           <section className="painel-de-videos">
             <CardVideo
@@ -36,12 +39,12 @@ export default function App() {
               textoAlternativo={card1.textoAlternativo}
             />
           </section>
-        </main>
+        </Principal>
 
-        <footer>
+        <Fim>
           <h4>Oi! Eu moro no footer!</h4>
-        </footer>
-      </div>
+        </Fim>
+      </TelaInteira>
     </div>
   );
 }
