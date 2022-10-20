@@ -1,6 +1,6 @@
 import React from "react";
 import CardVideo from "./Componentes/CardVideo/CardVideo";
-import "./styles.css";
+
 import { GlobalStyle } from "./GlobalStyle";
 import { Cabecalho, TelaInteira, Principal, Lateral, Secao, Lista, Fim, Titulo4 } from "./styled"
 
