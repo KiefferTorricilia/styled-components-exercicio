@@ -2,7 +2,7 @@ import React from "react";
 import CardVideo from "./Componentes/CardVideo/CardVideo";
 import "./styles.css";
 import { GlobalStyle } from "./GlobalStyle";
-import { Cabecalho, TelaInteira, Principal, Lateral, secao, Lista, Fim } from "./styled"
+import { Cabecalho, TelaInteira, Principal, Lateral, Secao, Lista, Fim, Titulo4 } from "./styled"
 
 export default function App() {
   const card1 = {
@@ -32,17 +32,17 @@ export default function App() {
             </Lista>
           </Lateral>
 
-          <section className="painel-de-videos">
+          <Secao>
             <CardVideo
               image1={card1.imagemDoVideo}
               titulo={card1.titulo}
               textoAlternativo={card1.textoAlternativo}
             />
-          </section>
+          </Secao>
         </Principal>
 
         <Fim>
-          <h4>Oi! Eu moro no footer!</h4>
+          <Titulo4>Oi! Eu moro no footer!</Titulo4>
         </Fim>
       </TelaInteira>
     </div>

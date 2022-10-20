@@ -26,7 +26,7 @@ export const Lateral = styled.nav`
   border-right-width: thin;
 `
 
-export const secao = styled.section`
+export const Secao = styled.section`
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -48,4 +48,8 @@ export const Fim = styled.footer`
   width: 100%;
   display: flex;
   padding: 0 10px;
+`
+
+export const Titulo4 = styled.h4`
+  margin-left: 20px;
 `
